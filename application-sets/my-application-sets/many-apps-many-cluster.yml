@@ -22,6 +22,8 @@ spec:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
+      syncPolicy:
+        automated: {}
       project: '{{metadata.labels.environment}}'
       source:
         repoURL: https://github.com/SuperFoued/gitops2.git
